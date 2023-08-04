@@ -4,7 +4,7 @@
 
 ---
 
-This is a solution to the [Base Apparel Coming Soon](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0).
+This is a solution to the [Base Apparel Coming Soon](https://www.frontendmentor.io/solutions/base-apparel-coming-soon-page-html-scss-javascript-YboK_oSYqk).
 
 ### Screenshot
 
