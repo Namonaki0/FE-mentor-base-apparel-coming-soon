@@ -28,7 +28,7 @@ body main {
     display: flex;
     align-content: space-between;
     margin: 0 auto;
-    padding: 4rem 16rem 5rem 10rem;
+    padding: 5rem 16rem 5rem 10rem;
     background: url("../images/bg-pattern-desktop.svg") no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -143,14 +143,14 @@ body main section .form-submit-wrapper .submit {
   height: 16px;
   color: white;
   margin-left: auto;
-  box-shadow: 0 15px 25px rgba(243, 167, 167, 0.932);
+  box-shadow: 0 12px 28px rgba(241, 167, 167, 0.932);
   transition: all 150ms linear;
   cursor: pointer;
 }
 @media (min-width: 1440px) {
   body main section .form-submit-wrapper .submit {
     min-width: 65px;
-    height: 26px;
+    height: 22px;
   }
 }
 body main section .form-submit-wrapper .submit:hover, body main section .form-submit-wrapper .submit:focus {
