@@ -45,6 +45,7 @@ function submissionSuccessState() {
     submitBtn.style.width = "100%";
     submitBtn.style.pointerEvents = "none";
     submitBtn.style.cursor = "initial";
+    submitBtn.style.boxShadow = "0 15px 25px rgba(194, 127, 127, 0.932)";
 
     submitBtn.innerHTML = `<span style="display:block;text-align:center">Thank you for subscribing</span>`;
 

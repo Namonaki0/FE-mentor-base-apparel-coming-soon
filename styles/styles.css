@@ -28,7 +28,7 @@ body main {
     display: flex;
     align-content: space-between;
     margin: 0 auto;
-    padding: 3rem 16rem 5rem 8rem;
+    padding: 4rem 16rem 5rem 10rem;
     background: url("../images/bg-pattern-desktop.svg") no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -92,7 +92,6 @@ body main section p {
 @media (min-width: 1440px) {
   body main section p {
     line-height: 26px;
-    width: 90%;
     font-size: medium;
   }
 }
@@ -103,11 +102,6 @@ body main section .form-submit-wrapper {
   border: 1px solid hsla(0deg, 36%, 70%, 0.459);
   border-radius: 25px;
   transition: all 150ms linear;
-}
-@media (min-width: 1440px) {
-  body main section .form-submit-wrapper {
-    width: 92%;
-  }
 }
 body main section .form-submit-wrapper input,
 body main section .form-submit-wrapper button {
@@ -149,7 +143,7 @@ body main section .form-submit-wrapper .submit {
   height: 16px;
   color: white;
   margin-left: auto;
-  box-shadow: 0 15px 20px rgba(168, 127, 127, 0.8);
+  box-shadow: 0 15px 25px rgba(243, 167, 167, 0.932);
   transition: all 150ms linear;
   cursor: pointer;
 }
@@ -230,7 +224,7 @@ body .desktop-image-wrapper {
 @media (min-width: 1440px) {
   body .desktop-image-wrapper {
     display: block;
-    width: 90%;
+    width: 100%;
   }
   body .desktop-image-wrapper img {
     width: 100%;
