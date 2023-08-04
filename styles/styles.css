@@ -30,6 +30,8 @@ body main {
     margin: 0 auto;
     padding: 3rem 16rem 5rem 8rem;
     background: url("../images/bg-pattern-desktop.svg") no-repeat;
+    background-size: cover;
+    background-position: bottom;
   }
 }
 body main header {
@@ -72,7 +74,7 @@ body main section h2 {
 @media (min-width: 1440px) {
   body main section h2 {
     font-size: 4rem;
-    letter-spacing: 18px;
+    letter-spacing: 16px;
     line-height: 68px;
     margin-bottom: 1.5rem;
   }

@@ -36,9 +36,10 @@ body {
       display: flex;
       align-content: space-between;
       margin: 0 auto;
-      // margin-right: 18rem;
       padding: 3rem 16rem 5rem 8rem;
       background: url("../images/bg-pattern-desktop.svg") no-repeat;
+      background-size: cover;
+      background-position: bottom;
     }
 
     header {
@@ -86,7 +87,7 @@ body {
 
         @media (min-width: 1440px) {
           font-size: 4rem;
-          letter-spacing: 18px;
+          letter-spacing: 16px;
           line-height: 68px;
           margin-bottom: 1.5rem;
         }
@@ -152,8 +153,8 @@ body {
           transform: translate(-70%, 50%);
           pointer-events: none;
 
-                  @media (min-width: 1440px) {
-        transform: translate(-70%, 68%);
+          @media (min-width: 1440px) {
+            transform: translate(-70%, 68%);
           }
         }
 
@@ -236,9 +237,6 @@ body {
       & {
         display: flex;
         flex-direction: column;
-
-        header {
-        }
 
         .hero-image-wrapper {
           display: none;
