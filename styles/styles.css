@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  min-height: 100vh;
+  margin: auto;
+}
+@media (min-width: 1440px) {
+  body {
+    display: flex;
+    max-width: 1440px;
+  }
+}
+body main {
+  width: 370px;
+  height: 100vh;
+  margin: 0 auto;
+  background: linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
+}
+@media (min-width: 1440px) {
+  body main {
+    width: unset;
+    display: flex;
+    align-content: space-between;
+    margin: 0 auto;
+    padding: 3rem 16rem 5rem 8rem;
+    background: url("../images/bg-pattern-desktop.svg") no-repeat;
+  }
+}
+body main header {
+  margin-right: left;
+}
+body main header img {
+  padding: 2rem 1.8rem;
+  width: 180px;
+}
+@media (min-width: 1440px) {
+  body main header img {
+    padding: 0;
+    margin-bottom: 5rem;
+    width: 160px;
+  }
+}
+body main .hero-image-wrapper img {
+  width: 100%;
+}
+body main section {
+  text-align: center;
+  padding: 3rem 2rem 2rem;
+}
+body main section:nth-child(even) {
+  padding-top: 0 !important;
+}
+@media (min-width: 1440px) {
+  body main section {
+    text-align: left;
+    padding: 3rem 0;
+  }
+}
+body main section h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: hsl(0deg, 6%, 24%);
+}
+@media (min-width: 1440px) {
+  body main section h2 {
+    font-size: 4rem;
+    letter-spacing: 18px;
+    line-height: 68px;
+    margin-bottom: 1.5rem;
+  }
+}
+body main section h2 span {
+  font-weight: 300;
+  display: block;
+  color: hsl(0deg, 36%, 70%);
+}
+body main section p {
+  color: hsl(0deg, 36%, 70%);
+  line-height: 22px;
+  font-size: 14px;
+}
+@media (min-width: 1440px) {
+  body main section p {
+    line-height: 26px;
+    width: 90%;
+    font-size: medium;
+  }
+}
+body main section .form-submit-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border: 1px solid hsla(0deg, 36%, 70%, 0.459);
+  border-radius: 25px;
+  transition: all 150ms linear;
+}
+@media (min-width: 1440px) {
+  body main section .form-submit-wrapper {
+    width: 92%;
+  }
+}
+body main section .form-submit-wrapper input,
+body main section .form-submit-wrapper button {
+  all: unset;
+  padding: 0.8rem;
+}
+body main section .form-submit-wrapper .form-input {
+  width: 100%;
+  margin: 0 0.5rem;
+  text-align: left;
+  font-size: medium;
+  color: black;
+  transition: all 150ms linear;
+}
+body main section .form-submit-wrapper .form-input::placeholder {
+  text-align: left;
+  font-size: small;
+  color: hsl(0deg, 36%, 70%);
+  text-align: left;
+  opacity: 0.5;
+}
+body main section .form-submit-wrapper .error-icon {
+  visibility: hidden;
+  height: 20px;
+  vertical-align: middle;
+  transform: translate(-70%, 50%);
+  pointer-events: none;
+}
+@media (min-width: 1440px) {
+  body main section .form-submit-wrapper .error-icon {
+    transform: translate(-70%, 68%);
+  }
+}
+body main section .form-submit-wrapper .submit {
+  position: relative;
+  background: linear-gradient(135deg, hsl(0deg, 32%, 82%), hsl(0deg, 80%, 72%) 80%);
+  border-radius: 25px;
+  width: 50px;
+  height: 16px;
+  color: white;
+  margin-left: auto;
+  box-shadow: 0 15px 20px rgba(168, 127, 127, 0.8);
+  transition: all 150ms linear;
+  cursor: pointer;
+}
+@media (min-width: 1440px) {
+  body main section .form-submit-wrapper .submit {
+    min-width: 65px;
+    height: 26px;
+  }
+}
+body main section .form-submit-wrapper .submit:hover, body main section .form-submit-wrapper .submit:focus {
+  background: hsl(0deg, 67%, 80%);
+  transform: scale(1.1);
+}
+body main section .form-submit-wrapper .submit svg {
+  position: absolute;
+  transform: translate(-42%, -50%);
+  pointer-events: none;
+}
+@media (min-width: 1440px) {
+  body main section .form-submit-wrapper .submit svg {
+    transform: translate(90%, -50%);
+  }
+}
+@keyframes submissionMessageEffect {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body main section .error-message {
+  visibility: hidden;
+  color: hsl(0deg, 93%, 68%);
+  display: block;
+  text-align: left;
+  margin-left: 1.2rem;
+  margin-top: 0.5rem;
+  font-size: small;
+}
+@keyframes errorMessageEffect {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes errorIconEffect {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 1440px) {
+  body main {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .hero-image-wrapper {
+    display: none;
+  }
+  body main .section-info {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .section-info form .submit {
+    width: 50px;
+  }
+}
+body .desktop-image-wrapper {
+  display: none;
+}
+@media (min-width: 1440px) {
+  body .desktop-image-wrapper {
+    display: block;
+    width: 90%;
+  }
+  body .desktop-image-wrapper img {
+    width: 100%;
+    display: block;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
